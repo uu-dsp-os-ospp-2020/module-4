@@ -59,6 +59,8 @@ main()
 
     // Todo: Initialize semaphores.
 
+    sem = psem_init(666);
+    
     srand(time(NULL));
     pthread_setconcurrency(3);
 
@@ -74,6 +76,7 @@ main()
     }
 
     // Todo: Destroy semaphores.
+    psem_destroy(sem);
 
     return 0;
 }

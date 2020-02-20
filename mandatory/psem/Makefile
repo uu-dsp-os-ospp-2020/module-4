@@ -1,4 +1,4 @@
-TARGETS  := psem.o mutex.o
+TARGETS  := psem.o
 CFLAGS   := -Wall -std=c99
 LDLIBS   :=
 PLATFORM := $(shell uname -s)
